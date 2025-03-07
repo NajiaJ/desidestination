@@ -5,10 +5,14 @@
         width:auto;
     }
 
+    .hero-text #banner{
+        font-size: 30px;
+    }
+
     .hero-text #descript{
         font-size: 10vw;
     }
-    
+
     .navi{
         display: none;
         text-align: center;
