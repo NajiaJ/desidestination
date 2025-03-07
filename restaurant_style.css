@@ -7,12 +7,17 @@
     .navi{
         display: none;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
     }
     .navi li{
         float: none;
         width: 100%;
         text-align: center;
-        padding: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
     }
 
     .hero-text p{
