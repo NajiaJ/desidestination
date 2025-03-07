@@ -1,0 +1,288 @@
+@media screen and (max-width: 600px) {
+    .hero-image{
+        background-size: cover;
+        height: auto;
+        width:auto;
+    }
+    .navi{
+        display: none;
+        text-align: center;
+    }
+    .navi li{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-text p{
+        font-size: 64%;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+        background-color: blanchedalmond;
+    }
+
+label[for="menu-toggle"] {
+    display: block;
+    cursor: pointer;
+}
+
+    #menu-toggle:checked + label + nav .navi {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .menu-toggle{
+        display: none;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label[for="menu-toggle"] {
+    display: block;
+    cursor: pointer;
+}
+
+html, body{
+    width: 100%;
+    margin: 0;
+}
+
+#title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 15px;
+    position: sticky;
+    top: 0;
+    background-color: blanchedalmond;
+    z-index: 10;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("biriyani_home.avif");
+    height: 100vh;
+    width: 100vw;
+    padding-top: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.hero-text {
+    font-size: 80px;
+    font-family: cursive;
+    text-align: center;
+    padding: 30px;
+    color: aliceblue;
+    position: relative;
+    z-index: 1;
+}
+
+#descript{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi{
+    overflow: hidden;
+    background-color: transparent;
+    text-align: right;
+}
+
+.navi li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 16px;
+    margin-left: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    z-index: 5;
+}
+
+.navi li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navi li a:hover{
+    background-color:burlywood;
+    color:black
+}
+
+.button {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 30px 50px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    z-index: 2;
+}
+
+.button:hover{
+    background-color:maroon;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    clear: both;
+    text-align: center;
+}
+
+.grid-container-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.social-media, .business-hour {
+    text-align: center;
+    font-size: 25px;
+}
+
+.social-media a {
+    margin: 5px 10px;
+    text-decoration: none;
+}
+
+/* Here starts the menu CSS styling */
+
+.menu-title{
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-items{
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 27px;
+    width: 100%;
+}
+
+.menu-items th, .menu-items td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.scroll-menu{
+    background-color: bisque;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-menu img{
+    padding: 10px;
+}
+
+.img{
+    width: 400px;
+    height: 400px;
+    object-fit: scale-down;
+}
+
+/* Here starts the about CSS styling */ 
+
+#about-title{
+    font-size: 70px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-store{
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+#special-dish{
+    font-size: 70px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-dishes{
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+/* Here starts the contact CSS styling*/
+
+#find, #contact{
+    font-size: 40px;
+    margin-left: 210px;
+    text-align: center;
+    width: 50%;
+}
+
+.map{
+    margin-left: 50px;
+}
+
+.contact-us{
+    font-size: 30px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+input[type=text]{
+    width: 300px;
+}
+
+textarea{
+    height: 200px;
+    width: 300px;
+}
+
+input[type=submit]{
+    padding: 14px 12px;
+    background-color: brown;
+    color:white;
+    border: none;
+    border-radius:8px;
+}
+
+input[type=submit]:hover{
+    background-color: crimson;
+} 

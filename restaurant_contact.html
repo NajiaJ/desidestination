@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="restaurant_style.css">
+    <title>Desi Destination</title>
+    <style>
+        body{
+            background-color:blanchedalmond;
+        }
+        @media screen and (max-width: 600px) {
+            .column{
+                width: 100%;
+                display: block;
+                float: none;
+                padding: 0px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+            <h1 id="title">Desi Destination</h1>
+
+            <ul class="navi">
+                <li><a href="restaurant_home.html"> Home </a></li>
+                <li><a href="restaurant_menu.html"> Menu </a></li>
+                <li><a href="restaurant_about.html"> About </a></li>
+                <li><a href="restaurant_contact.html"> Contact Us </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="column">
+            <h2>Find Us Here!</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.735596139715!2d-73.96710402397149!3d40.76783977138532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258eb899f0889%3A0xb5e90aa7d877ee1f!2sHunter%20College!5e0!3m2!1sen!2sus!4v1741290883669!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="column">
+            <h2> Contact Us! </h2>
+            <form class="contact-form">
+                <label for="name"> Name: </label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email"> Email Address: </label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="message"> Message </label><br>
+                <textarea id="message" name="message"> </textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="grid-container-social">
+        <div class="social-media"> 
+            <p> Social Media: </p>
+            <a href="#"> Instagram </a>
+            <a href="#"> Facebook </a>
+        </div>
+        <div class="business-hour">
+            <p> Business Hours: </p>
+            <p> Sun/Sat: 10am - 10pm </p>
+            <p> Mon/Tues/Thurs: 10am - 7pm </p>
+            <p> Wed/Fri: CLOSED </p>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
