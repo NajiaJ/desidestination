@@ -20,6 +20,7 @@
         padding-right: 10px;
         width: 100%;
     }
+
     .navi li{
         float: none;
         width: 100%;
@@ -39,30 +40,21 @@
         color: black;
         cursor: pointer;
         padding: 10px;
+        border: none;
         background-color: blanchedalmond;
-    }
-
-label[for="menu-toggle"] {
-    display: block;
-    cursor: pointer;
-}
-
-    #menu-toggle:checked + label + nav .navi {
-        display: block;
     }
 }
 
 @media screen and (min-width: 601px) {
-    .menu-toggle{
+    .menu-icon {
         display: none;
+        color: transparent;
     }
 }
 
-input[type="checkbox"] {
-    display: none;
-}
-
-label[for="menu-toggle"] {
+.menu-icon {
+    border: none;
+    background-color: transparent;
     display: block;
     cursor: pointer;
 }
