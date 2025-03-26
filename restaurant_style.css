@@ -18,7 +18,18 @@
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        bottom:auto;
+        left: 0;
         width: 100%;
+        background-color: blanchedalmond;
+        z-index: 100;
+    }
+
+    .navi.show {
+        display: flex;
     }
 
     .navi li{
@@ -43,6 +54,8 @@
         border: none;
         background-color: blanchedalmond;
     }
+
+    
 }
 
 @media screen and (min-width: 601px) {
@@ -51,6 +64,7 @@
         color: transparent;
     }
 }
+
 
 .menu-icon {
     border: none;
@@ -62,6 +76,11 @@
 html, body{
     width: 100%;
     margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
 }
 
 #title{
@@ -102,12 +121,11 @@ html, body{
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
 }
 
 .navi{
     overflow: hidden;
-    background-color: transparent;
     text-align: right;
 }
 
