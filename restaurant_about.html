@@ -15,8 +15,8 @@
 
 <body>
     <header>
+        <h1 id="title">Desi Destination</h1>
         <nav>
-            <h1 id="title">Desi Destination</h1>
             <button class="menu-icon", onclick="dashMenu()"> &#9776; </button>
             <ul class="navi">
                 <li><a href="index.html"> Home </a></li>
@@ -80,5 +80,12 @@
     </footer>
 
 </body>
+
+<script>
+    function dashMenu(){
+        const menu = document.querySelector('.navi');
+        menu.classList.toggle('show');
+    }
+</script>
 
 </html>
