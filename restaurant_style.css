@@ -221,6 +221,14 @@ footer{
     padding: 10px;
 }
 
+button{
+    background-color: black;
+    color:white;
+    font-size: large;
+    width: 30px;
+    margin: 4px 2px;
+}
+
 .scroll-menu{
     background-color: bisque;
     overflow: auto;
