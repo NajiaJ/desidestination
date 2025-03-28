@@ -24,9 +24,24 @@
                 <li><a href="restaurant_menu.html"> Menu </a></li>
                 <li><a href="restaurant_about.html"> About </a></li>
                 <li><a href="restaurant_contact.html"> Contact Us </a></li>
+                <li><a href="restaurant_cart.html"> Cart </a></li>
             </ul>
         </nav>
     </header>
 </body>
+
+<script>
+    function dashMenu(){
+        const menu = document.querySelector('.navi');
+        menu.classList.toggle('show');
+        const title = document.getElementById('title');
+        const menu_icon = document.getElementsByClassName('menu-icon');
+        if (title.style.visibility === "hidden") {
+            title.style.visibility = "visible";
+        } else {
+            title.style.visibility = "hidden";
+        }
+    }
+</script>
 
 </html>
