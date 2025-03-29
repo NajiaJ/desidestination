@@ -12,10 +12,24 @@ function dashMenu(){
 
 const cart_items = [];
 
-document.getElementById("cart").onclick = function(){
-    addToCart();
+const buttons = document.getElementsByClassName("cart");
+for(let i = 0; i < buttons.length; i++)
+{
+    buttons[i].onclick = function(){
+    addToCart(buttons[i]);
+    };
 }
 
-function addToCart(){
+function addToCart(button){
+    const rows = button.closest("tr");
+
+    const cell_item = rows.getElementsByTagName("td");
+
+    let name = cell_item[0].textContent.trim();
+    let price = cell_item[1].textContent.trim(); 
+
+    cart_items.push({name, price});
+
     alert('Successfully Added to Cart');
+    console.log(cart_items);
 }
