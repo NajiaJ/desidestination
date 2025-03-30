@@ -29,21 +29,22 @@
         </nav>
     </header>
 
-    <h2> Your Cart </h2>
-</body>
+    <div id="cart-container">
+        <h3> Shopping Cart </h3>
+        <table class="cart">
+            <tr>
+                <th colspan="2"> Item </th>
+                <th> Quantity </th>
+                <th> Price </th>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
 
-<script>
-    function dashMenu(){
-        const menu = document.querySelector('.navi');
-        menu.classList.toggle('show');
-        const title = document.getElementById('title');
-        const menu_icon = document.getElementsByClassName('menu-icon');
-        if (title.style.visibility === "hidden") {
-            title.style.visibility = "visible";
-        } else {
-            title.style.visibility = "hidden";
-        }
-    }
-</script>
+
+
+
+    <script src="restaurant.js"></script>
+</body>
 
 </html>

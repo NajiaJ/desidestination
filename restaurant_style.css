@@ -321,7 +321,14 @@ input[type=submit]:hover{
 
 /* Cart Items */
 
-h2{
+h3{
     text-align: center;
     font-size: 40px;
+}
+
+.cart {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 25px;
+    width: 100%;
 }
