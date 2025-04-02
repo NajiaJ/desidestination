@@ -26,7 +26,8 @@ function addToCart(button){
     const cell_item = rows.getElementsByTagName("td");
 
     let name = cell_item[0].textContent.trim();
-    let price = cell_item[1].textContent.trim(); 
+    let price = cell_item[1].childNodes[0].textContent.trim();
+    price = price.replace('$', '').trim();
 
     cart_items.push({name, price});
 
