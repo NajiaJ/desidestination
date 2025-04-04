@@ -87,16 +87,11 @@ function updateCartSidebar(){
 
 function openCart(){
     let open_width = document.getElementById('sideBarCart').style.width = '500px';
-    const title = document.getElementById('title');
-    if (title.style.visibility === "hidden") {
-        title.style.visibility = "visible";
-    } else {
-        title.style.visibility = "hidden";
-    }
 }
 
 function closeCart(){
     document.getElementById('sideBarCart').style.width = '0px';
+    document.getElementById('cartTitle').style.display = 'block';
 }
 
 function clearCart(){
