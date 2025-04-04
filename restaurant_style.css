@@ -341,6 +341,35 @@ h3{
 .cart {
     text-align: center;
     border: 1px solid black;
-    font-size: 25px;
-    width: 100%;
+    font-size: 15px;
+    width: auto;
+}
+
+#sideBarCart{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:burlywood;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sideBarCart h3{
+    text-align: center;
+}
+
+#sideBarCart .closeButton{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: x-large;
+    align-items: flex-end;
+}
+
+#sideBarCart .closeButton:hover{
+    background-color:brown;
 }

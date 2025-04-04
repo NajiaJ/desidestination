@@ -23,7 +23,7 @@
                 <li><a href="restaurant_menu.html"> Menu </a></li>
                 <li><a href="restaurant_about.html"> About </a></li>
                 <li><a href="restaurant_contact.html"> Contact Us </a></li>
-                <li><button class="shopping-icon"> Cart </button></li>
+                <li><button class="shopping-icon" onclick="openCart()"> Cart </button></li>
             </ul>
         </nav>
     </header>
@@ -69,6 +69,14 @@
             <td> $8.00 <button class="cart" onclick="addToCart(this)"> Add to cart </button> </td>
         </tr>
     </table>
+    </div>
+
+    <div id="sideBarCart">
+        <button class="closeButton" onclick="closeCart()"> &#9747; </button>
+        <h3> Cart </h3>
+        <div id="cartContents"> 
+
+        </div>
     </div>
     
     <div class="scroll-menu">

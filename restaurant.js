@@ -32,5 +32,24 @@ function addToCart(button){
     cart_items.push({name, price});
 
     alert('Successfully Added to Cart');
-    console.log(cart_items);
+    updateCartSidebar();
+    //console.log(cart_items);
+}
+
+function updateCartSidebar(){
+
+}
+
+function openCart(){
+    document.getElementById('sideBarCart').style.width = '500px';
+    const title = document.getElementById('title');
+    if (title.style.visibility === "hidden") {
+        title.style.visibility = "visible";
+    } else {
+        title.style.visibility = "hidden";
+    }
+}
+
+function closeCart(){
+    document.getElementById('sideBarCart').style.width = '0px';
 }
