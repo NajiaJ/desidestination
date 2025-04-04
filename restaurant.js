@@ -27,7 +27,7 @@ function addToCart(button){
 
     let name = cell_item[0].textContent.trim();
     let price = cell_item[1].childNodes[0].textContent.trim();
-    price = price.replace('$', '').trim();
+    price = +price.replace('$', '').trim();
 
     cart_items.push({name, price});
 
@@ -37,11 +37,20 @@ function addToCart(button){
 }
 
 function updateCartSidebar(){
-
+    const cartContents = document.getElementById('cartContents');
+    cartContents.innerHTML = ' ';
+    cart_items.forEach(item => {
+        const div = document.createElement('div');
+        div.classList.add('cart-item');
+        div.innerHTML = `
+            <span>${item.name} - $${item.price.toFixed(2)}</span>
+        `;
+        cartContents.appendChild(div);
+    });
 }
 
 function openCart(){
-    document.getElementById('sideBarCart').style.width = '500px';
+    let open_width = document.getElementById('sideBarCart').style.width = '500px';
     const title = document.getElementById('title');
     if (title.style.visibility === "hidden") {
         title.style.visibility = "visible";
