@@ -66,7 +66,7 @@ function updateCartSidebar(){
                 item.quantity--;
                 updateCartSidebar();
             }
-            if(item.quantity == 1)
+            else if(item.quantity == 1)
             {
                 cart_items.splice(cart_items.indexOf(item), 1);
                 updateCartSidebar();
