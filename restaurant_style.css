@@ -379,3 +379,10 @@ h3{
     width: 100px;
     text-align: center;
 }
+
+.navi.hidden{
+    display: none;
+}
+.navi.show{
+    display: block;
+}

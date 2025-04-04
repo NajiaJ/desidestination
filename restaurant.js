@@ -3,11 +3,13 @@ function dashMenu(){
     menu.classList.toggle('show');
     const title = document.getElementById('title');
     const menu_icon = document.getElementsByClassName('menu-icon');
+    
     if (title.style.visibility === "hidden") {
         title.style.visibility = "visible";
     } else {
         title.style.visibility = "hidden";
     }
+
 }
 
 const cart_items = [];
@@ -87,6 +89,18 @@ function updateCartSidebar(){
 
 function openCart(){
     let open_width = document.getElementById('sideBarCart').style.width = '500px';
+    const cart = document.getElementById('sideBarCart');
+    const menu = document.querySelector('.navi');
+    // menu.classList.toggle('hidden');
+    if (cart.style.display === 'block') {
+        menu.classList.toggle('hidden');
+    } else {
+        cart.style.display = 'block';
+    }
+    menu.classList.toggle('show');
+    const title = document.getElementById('title');
+    title.style.visibility = "visible";
+
 }
 
 function closeCart(){
