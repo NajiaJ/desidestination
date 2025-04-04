@@ -29,7 +29,16 @@ function addToCart(button){
     let price = cell_item[1].childNodes[0].textContent.trim();
     price = +price.replace('$', '').trim();
 
-    cart_items.push({name, price});
+    let existItem = cart_items.find(item => item.name === name);
+
+    if(existItem)
+    {
+        existItem++;
+    }
+    else
+    {
+        cart_items.push({name, price, quantity: 1});
+    }
 
     alert('Successfully Added to Cart');
     updateCartSidebar();
@@ -41,10 +50,35 @@ function updateCartSidebar(){
     cartContents.innerHTML = ' ';
     cart_items.forEach(item => {
         const div = document.createElement('div');
+        const quantifyinc = document.createElement('button');
+        const quantifydec = document.createElement('button');
+        quantifydec.textContent = '-';
+        quantifyinc.textContent = '+';
+
+        quantifyinc.onclick = function(){
+            item.quantity++;
+            updateCartSidebar();
+        }
+
+        quantifydec.onclick = function(){
+            if(item.quantity > 1)
+            {
+                item.quantity--;
+                updateCartSidebar();
+            }
+            if(item.quantity == 1)
+            {
+                cart_items.splice(cart_items.indexOf(item), 1);
+                updateCartSidebar();
+            }
+        }
+
         div.classList.add('cart-item');
         div.innerHTML = `
-            <span>${item.name} - $${item.price.toFixed(2)}</span>
+            <span>${item.name} - $${item.price.toFixed(2)} * ${item.quantity}</span>
         `;
+        div.appendChild(quantifydec);
+        div.appendChild(quantifyinc);
         cartContents.appendChild(div);
     });
 }
