@@ -321,6 +321,18 @@ input[type=submit]:hover{
 
 /* Cart Items */
 
+.shopping-icon{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: x-large;
+}
+
+.shopping-icon:hover{
+    background-color:burlywood;
+    color:black
+}
+
 h3{
     text-align: center;
     font-size: 40px;
