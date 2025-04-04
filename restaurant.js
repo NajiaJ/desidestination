@@ -73,6 +73,8 @@ function updateCartSidebar(){
             }
         }
 
+
+
         div.classList.add('cart-item');
         div.innerHTML = `
             <span>${item.name} - $${item.price.toFixed(2)} * ${item.quantity}</span>
@@ -95,4 +97,9 @@ function openCart(){
 
 function closeCart(){
     document.getElementById('sideBarCart').style.width = '0px';
+}
+
+function clearCart(){
+    cart_items.length = 0;
+    updateCartSidebar();
 }

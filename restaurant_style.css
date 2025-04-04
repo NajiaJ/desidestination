@@ -373,3 +373,8 @@ h3{
 #sideBarCart .closeButton:hover{
     background-color:brown;
 }
+
+.clearButton{
+    width: 100px;
+    text-align: center;
+}
